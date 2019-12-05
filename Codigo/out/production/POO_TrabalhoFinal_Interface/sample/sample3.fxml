@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller3">
+   <children>
+       <Label layoutX="227.0" layoutY="14.0" prefHeight="21.0" prefWidth="146.0" text="Folha de Pagamento" textFill="#006f97">
+           <font>
+               <Font name="System Bold" size="15.0" />
+           </font>
+       </Label>
+       <Separator layoutX="2.0" layoutY="45.0" prefHeight="17.0" prefWidth="600.0" />
+       <Label fx:id="nome" layoutX="21.0" layoutY="62.0" prefHeight="17.0" prefWidth="542.0" text="nome" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+       <Label fx:id="codigo" layoutX="21.0" layoutY="83.0" prefHeight="17.0" prefWidth="468.0" text="codigo " textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+       <Label fx:id="setor" layoutX="21.0" layoutY="104.0" prefHeight="17.0" prefWidth="461.0" text="setor" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="salarioBruto" layoutX="21.0" layoutY="155.0" prefHeight="17.0" prefWidth="461.0" text="salarioBruto" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="inss" layoutX="21.0" layoutY="176.0" prefHeight="17.0" prefWidth="542.0" text="inss" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="irrf" layoutX="21.0" layoutY="197.0" prefHeight="17.0" prefWidth="468.0" text="irrf" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="valeTrans" layoutX="21.0" layoutY="218.0" prefHeight="17.0" prefWidth="461.0" text="valeTransporte" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalDescontos" layoutX="21.0" layoutY="250.0" prefHeight="17.0" prefWidth="461.0" text="totalDescontos" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="157.0" layoutY="330.0" mnemonicParsing="false" onAction="#imprimir" prefHeight="25.0" prefWidth="140.0" text="Imprimir Folha" textFill="#004157">
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon_impressora.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Separator layoutY="299.0" prefHeight="17.0" prefWidth="600.0" />
+      <Label fx:id="salarioLiquido" layoutX="21.0" layoutY="271.0" prefHeight="17.0" prefWidth="461.0" text="salarioLiquido" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="horas" layoutX="21.0" layoutY="125.0" prefHeight="17.0" prefWidth="461.0" text="horas" textAlignment="CENTER" textFill="#404040">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="303.0" layoutY="329.0" mnemonicParsing="false" onAction="#botaoPdf" prefHeight="28.0" prefWidth="140.0" text="Gerar PDF " textFill="#004157">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/icon_pdf.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

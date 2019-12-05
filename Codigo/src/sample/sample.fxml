@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="5.0" layoutY="14.0" prefHeight="17.0" prefWidth="594.0" text="Sistema para Criação e Impressão de Folhas de Pagamento (SCIF)" textFill="#006f97">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="2.0" layoutY="45.0" prefHeight="17.0" prefWidth="600.0" />
+      <Label layoutX="38.0" layoutY="73.0" prefHeight="17.0" prefWidth="185.0" text="Número de Desenvolvedores" />
+      <TextField fx:id="numDev" layoutX="38.0" layoutY="90.0" />
+      <Label layoutX="38.0" layoutY="126.0" prefHeight="17.0" prefWidth="185.0" text="Número de Analistas" />
+      <TextField fx:id="numAnalistas" layoutX="38.0" layoutY="143.0" />
+      <Label layoutX="38.0" layoutY="177.0" prefHeight="17.0" prefWidth="185.0" text="Número de Gerentes" />
+      <TextField fx:id="numGerentes" layoutX="38.0" layoutY="194.0" />
+      <Button fx:id="btnGerarFunc" layoutX="38.0" layoutY="231.0" mnemonicParsing="false" onAction="#botaoGerarFunc" text="Gerar" textFill="#004157" />
+   </children>
+</Pane>
